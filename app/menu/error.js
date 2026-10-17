@@ -1,0 +1,2 @@
+"use client";
+export default function Error({ reset }) { return <main className="empty-page"><span className="eyebrow">MENU ERROR</span><h1>Something went wrong.</h1><p>We couldn't load the menu right now.</p><button className="button primary" onClick={() => reset()}>Try again</button></main>; }
