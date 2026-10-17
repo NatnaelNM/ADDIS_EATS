@@ -11,13 +11,15 @@ export default function SignInForm({ next }) {
       <input type="hidden" name="next" value={next} />
 
       <div className="form-row">
-        <label htmlFor="signin-email">Email address</label>
+        <label htmlFor="signin-email">Email or username</label>
         <input
           id="signin-email"
           name="email"
-          type="email"
+          type="text"
           autoComplete="username"
-          placeholder="customer@addiseats.test"
+          placeholder="admin or admin@addiseats.test"
+          autoCapitalize="none"
+          spellCheck={false}
           required
         />
       </div>

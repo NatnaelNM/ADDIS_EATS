@@ -16,9 +16,9 @@ import { clearSession, getSession, setSession } from "@/lib/session";
 import { verifyCredentials } from "@/lib/users";
 
 export async function signIn(_previousState, formData) {
-  const email = String(formData.get("email") || "");
+  const emailOrUsername = String(formData.get("email") || "").trim();
   const password = String(formData.get("password") || "");
-  const user = verifyCredentials(email, password);
+  const user = verifyCredentials(emailOrUsername, password);
 
   if (!user) {
     return { error: "Email or password is incorrect." };

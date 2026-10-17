@@ -12,7 +12,7 @@
 | `POST /api/orders` | Session, customer validation, request key, and server-side cart-price lookup | 401 or validation error |
 | `GET /api/orders/[id]` | Session and order ownership, unless staff/admin | 401, 403, or 404 |
 | `placeOrder` server action | Session, customer validation, non-empty cart, known dish IDs, quantity bounds, and server-side prices | Returns an error state without creating an order |
-| `signIn` server action | Classroom account credentials and same-site `next` destination | Reject invalid credentials or fall back to `/`; admins always go to `/admin` |
+| `signIn` server action | Classroom email-or-username credentials and same-site `next` destination | Reject invalid credentials or fall back to `/`; admins always go to `/admin` |
 
 ## Authorization checks to demonstrate
 

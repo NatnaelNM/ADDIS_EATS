@@ -24,7 +24,7 @@ For a production build, run `npm run build`, then `npm run start`. The app is no
 | Staff | `staff@addiseats.test` | `staff123` |
 | Admin | `admin@addiseats.test` | `admin123` |
 
-These accounts are for classroom demonstration only.
+You can sign in with either the full email address or the short username (`customer`, `staff`, or `admin`). These accounts are for classroom demonstration only.
 
 ## Main walkthrough
 
